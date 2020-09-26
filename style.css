@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+
+    background: url('img//header.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.header-wrapper {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ellipse {
+    margin-bottom: 6.2rem;
+}
+
+.headline {
+    font-weight: bold;
+    font-size: 3.6rem;
+    color: #fff;
+    letter-spacing: 9px;
+    text-align: center;
+
+    margin-bottom: 2.5rem;
+    padding: 0 .2rem;
+}
+
+.paragraph {
+    color: #fff;
+    font-size: .9rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.9rem;
+    letter-spacing: 1px;
+
+    max-width: 630px;
+
+}
+
+.down-btn {
+    margin-top: 5rem;
+    cursor: pointer;
+}
+
+/* About us =============================================== */
+
+section {
+    padding: 9rem 0;
+}
+
+.about-us {
+    position: relative;
+
+    border: 2px solid #3c3c3c;
+
+    padding: 3.2rem 0;
+}
+
+.about-us-header {
+    position: absolute;
+    top: -22px;
+    left: calc(50% - 215px);
+
+    color: #3c3c3c;
+    text-align: center;
+    font-size: 2.1rem;
+    letter-spacing: 5px;
+
+    padding: 0 7rem 0 7rem;
+
+    background-color: #fff;
+    z-index: 1;
+}
+
+.about-us-box {
+    text-align: center;
+    color: #3c3c3c;
+    font-weight: 100;
+    line-height: 1.7rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-us-box p {
+    max-width: 580px;
+}
+
+.about-us-box :nth-child(1) {
+    margin-bottom: 2.1rem;
+}
+
+/* Services ================================================ */
+
+.services {
+    background: url('img/services.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.services-box {
+    position: relative;
+
+    border: 2px solid #ffffff;
+    border-top: none;
+
+    padding: 3.2rem 0;
+}
+
+.services-box::before {
+    content: "";
+    height: 2px;
+    width: 301px;
+    background-color: #fff;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.services-box::after {
+    content: "";
+    height: 2px;
+    width: 301px;
+    background-color: #fff;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.services-header {
+    position: absolute;
+    top: -22px;
+    left: calc(50% - 215px);
+
+    color: #ffffff;
+    text-align: center;
+    font-size: 2.1rem;
+    letter-spacing: 5px;
+
+    padding: 0 7rem 0 7rem;
+
+}
+
+.services-text-box {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 100;
+    line-height: 1.7rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-text-box p {
+    max-width: 580px;
+}
+
+/* What-we-do====================================== */
+
+.what-we-do {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+
+    border: 2px solid #3c3c3c;
+
+    padding: 3.2rem 0;
+
+    color: #3c3c3c;
+}
+
+.wwd-header {
+    position: absolute;
+    top: -22px;
+    left: calc(50% - 247px);
+
+    color: #3c3c3c;
+    text-align: center;
+    font-size: 2.1rem;
+    letter-spacing: 5px;
+
+    padding: 0 7rem 0 7rem;
+
+    background-color: #fff;
+    z-index: 1;
+}
+
+.wwd-img {
+    margin: 2.9rem 0;
+}
+
+.wwd-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wwd-box h2 {
+    margin-bottom: 2.7rem;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.wwd-box p {
+    text-align: center;
+    color: #3c3c3c;
+    font-weight: 100;
+    line-height: 1.7rem;
+
+    margin-bottom: 2.9rem;
+    max-width: 434px;
+}
+
+/* Bricks ======================================== */
+
+.bricks {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.brick-el-1 {
+    flex-grow: 1;
+    flex-basis: 0;
+
+    background: url('img/top-1.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    height: 240px;
+
+    margin: 3px;
+    margin-left: 0;
+}
+
+.brick-el-2 {
+    flex-grow: 1;
+    flex-basis: 0;
+
+    background: url('img/top-2.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    height: 240px;
+
+    margin: 3px;
+}
+
+.brick-el-3 {
+    flex-grow: 1;
+    flex-basis: 0;
+
+    background: url('img/top-3.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    height: 240px;
+
+    margin: 3px;
+    margin-right: 0;
+}
+
+.brick-el-4 {
+    flex-grow: 1;
+    flex-basis: 0;
+
+    background: url('img/bottom-1.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    height: 240px;
+
+    margin: 3px;
+    margin-left: 0;
+}
+
+.brick-el-5 {
+    flex-grow: 1;
+    flex-basis: 0;
+
+    background: url('img/bottom-2.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    height: 240px;
+
+    margin: 3px;
+}
+
+.brick-el-6 {
+    flex-grow: 1;
+    flex-basis: 0;
+
+    background: url('img/bottom-3.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    height: 240px;
+
+    margin: 3px;
+    margin-right: 0;
+}
+
+.bricks div {
+    padding: 2rem;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.bricks h2 {
+    font-size: 2.1rem;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+/* Contact us ================================== */
+
+.contact-us {
+    position: relative;
+
+    border: 2px solid #3c3c3c;
+
+    padding: 3.2rem 0;
+}
+
+.contact-us-header {
+    position: absolute;
+    top: -22px;
+    left: calc(50% - 247px);
+
+    color: #3c3c3c;
+    text-align: center;
+    font-size: 2.1rem;
+    letter-spacing: 5px;
+
+    padding: 0 7rem 0 7rem;
+
+    background-color: #fff;
+    z-index: 1;
+}
+
+.contact-us-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-us-box p {
+    text-align: center;
+    color: #3c3c3c;
+    font-weight: 100;
+    line-height: 1.7rem;
+
+    max-width: 500px;
+}
+
+#contact-us-btn {
+    border: none;
+    outline: none;
+
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    letter-spacing: 3px;
+
+    background-color: #3c3c3c;
+
+    padding: 1.1rem 15%;
+    margin-top: 3rem;
+    border: 1px solid #3c3c3c;
+
+    cursor: pointer;
+
+    transition: all .3s;
+}
+
+#contact-us-btn:hover {
+    background-color: #fff;
+    color: #3c3c3c;
+
+    border: 1px solid #3c3c3c;
+
+    font-weight: bold;
+}
+
+/* Footer ======================================= */
+
+footer {
+    padding: 3.2rem 0;
+    text-align: center;
+}
+
+footer p {
+    color: #3c3c3c;
+    font-size: .9rem;
+}
+
+/* Media ======================================= */
+
+@media(min-height:780px) {
+    .paragraph {
+        margin-bottom: 10rem;
+    
+    }
+}
+
+@media(max-height:570px) {
+
+    .down-btn {
+        margin-top: 1rem;
+    }
+
+    .ellipse {
+        margin-bottom: 2rem;
+    }
+}
+
+@media(max-height:370px) {
+
+    .ellipse {
+        margin-bottom: 1rem;
+    }
+
+    .headline {
+        margin-bottom: 1.9rem;
+    }
+
+    .paragraph {
+        font-size: .7rem;
+        line-height: 1.3rem;
+    }
+}
+
+@media(max-width:1024px) {
+    .headline {
+        font-size: 2rem;
+    }
+
+    .contact-us, .what-we-do, .services-box, .about-us {
+        border: none;
+    }
+    .services-box::before, .services-box::after {
+        display: none;
+    }
+    .contact-us-header, .wwd-header, .about-us-header, .services-header {
+        position: static;
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+
+    .wwd-box h2 {
+        margin-bottom: 1rem;
+    }
+    .wwd-img {
+        margin-bottom: 1.3rem;
+    }
+
+    .bricks {
+        flex-direction: column;
+    }
+
+    .brick-el-1, .brick-el-2, .brick-el-3, 
+    .brick-el-4, .brick-el-5, .brick-el-6 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    p {
+        padding: 0 .5rem;
+    }
+}
